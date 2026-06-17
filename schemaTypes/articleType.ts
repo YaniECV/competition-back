@@ -8,8 +8,13 @@ export const articleType = defineType({
   type: 'document',
   fields: [
     defineField({
+      title: 'Titre',
+      name: 'title',
+      type: 'string'
+    }),
+    defineField({
       title: 'Contenu de page',
-      name: 'pageContent',
+      name: 'content',
       type: 'array',
       of: [
         defineArrayMember({ type: 'intro' }),
@@ -24,5 +29,5 @@ export const articleType = defineType({
         }
       }
     })
-  ],
+  ]
 })
