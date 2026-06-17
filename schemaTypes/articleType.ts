@@ -10,12 +10,14 @@ export const articleType = defineType({
     defineField({
       title: 'Titre',
       name: 'title',
-      type: 'string'
+      type: 'string',
+      placeholder: 'Mon article'
     }),
     defineField({
       title: 'Contenu de page',
       name: 'content',
       type: 'array',
+      description: 'Ajoutez, empilez et réordonnez vos blocs de contenu comme vous le souhaitez',
       of: [
         defineArrayMember({ type: 'intro' }),
         defineArrayMember({ type: 'hero' })
