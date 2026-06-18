@@ -1,8 +1,6 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-const previewImageUrl = (schemaTypeName: string) => `/static/preview-${schemaTypeName}.png`
-
 export const lawType = defineType({
   title: 'Lois',
   name: 'law',
@@ -10,23 +8,20 @@ export const lawType = defineType({
   icon: DocumentTextIcon,
   fields: [
     defineField({
-      title: 'Tag',
-      name: 'tag',
-      type: 'string',
-      description: 'Étiquette affichée au-dessus du titre',
-    }),
-    defineField({
       title: 'Titre',
       name: 'title',
-      type: 'string',
-      placeholder: 'Mes lois',
+      type: 'string'
     }),
     defineField({
       title: 'Description',
       name: 'description',
       type: 'text',
-      rows: 3,
-      description: 'Texte affiché sous le titre',
+      rows: 3
+    }),
+    defineField({
+      title: 'Référence',
+      name: 'reference',
+      type: 'string'
     }),
     defineField({
       title: 'Contenu de page',
@@ -36,14 +31,6 @@ export const lawType = defineType({
       of: [
         defineArrayMember({ type: 'lawBlock' }),
       ],
-      options: {
-        insertMenu: {
-          views: [
-            { name: 'grid', previewImageUrl },
-            { name: 'list' },
-          ],
-        },
-      },
     }),
   ],
 })

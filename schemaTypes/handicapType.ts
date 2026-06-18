@@ -24,7 +24,10 @@ export const handicapType = defineType({
     defineField({
       title: 'Description',
       name: 'description',
-      type: 'text'
+      type: 'array',
+      of: [
+        { type: 'block' }
+      ]
     }),
     defineField({
       title: 'Contenu de page',
