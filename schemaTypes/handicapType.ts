@@ -2,7 +2,7 @@ import { UserIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 export const handicapType = defineType({
-  title: 'Handicap',
+  title: 'Handicaps',
   name: 'handicap',
   type: 'document',
   icon: UserIcon,

@@ -1,3 +1,4 @@
+import { UlistIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 const previewImageUrl = (schemaTypeName: string) => `/static/preview-${schemaTypeName}.png`
@@ -6,6 +7,7 @@ export const bonnePratiqueType = defineType({
   title: 'Bonnes pratiques',
   name: 'bonnePratique',
   type: 'document',
+  icon: UlistIcon,
   fields: [
     defineField({
       title: 'Tag',

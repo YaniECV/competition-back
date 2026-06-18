@@ -1,11 +1,11 @@
-import { UsersIcon } from "@sanity/icons";
+import { DesktopIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 export const handicapPageType = defineType({
-  title: 'Page handicaps',
+  title: 'Page « Handicaps »',
   name: 'handicapPage',
   type: 'document',
-  icon: UsersIcon,
+  icon: DesktopIcon,
   options: {
     singleton: true
   },

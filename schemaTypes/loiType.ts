@@ -1,3 +1,4 @@
+import { DocumentTextIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 const previewImageUrl = (schemaTypeName: string) => `/static/preview-${schemaTypeName}.png`
@@ -6,6 +7,7 @@ export const loiType = defineType({
   title: 'Lois',
   name: 'loi',
   type: 'document',
+  icon: DocumentTextIcon,
   fields: [
     defineField({
       title: 'Tag',
