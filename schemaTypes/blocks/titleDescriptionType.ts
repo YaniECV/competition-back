@@ -1,14 +1,11 @@
-import { DesktopIcon } from "@sanity/icons";
+import { TextIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
-export const handicapPageType = defineType({
-  title: 'Page « Handicaps »',
-  name: 'handicapPage',
-  type: 'document',
-  icon: DesktopIcon,
-  options: {
-    singleton: true
-  },
+export const titleDescriptionType = defineType({
+  title: 'Titre/Description',
+  name: 'titleDescription',
+  type: 'object',
+  icon: TextIcon,
   fields: [
     defineField({
       title: 'Titre',
@@ -20,5 +17,5 @@ export const handicapPageType = defineType({
       name: 'description',
       type: 'text'
     })
-  ],
+  ]
 })

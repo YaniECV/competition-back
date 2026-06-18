@@ -1,5 +1,9 @@
 import { UserIcon } from "@sanity/icons";
-import { defineField, defineType } from "sanity";
+import { defineArrayMember, defineField, defineType } from "sanity";
+import { commRulesType } from "./blocks/commRulesType";
+import { titleDescriptionType } from "./blocks/titleDescriptionType";
+import { goodPracticeReferencesType } from "./blocks/goodPracticeReferencesType";
+import { lawReferencesType } from "./blocks/lawReferencesType";
 
 export const handicapType = defineType({
   title: 'Handicaps',
@@ -13,21 +17,25 @@ export const handicapType = defineType({
       type: 'string'
     }),
     defineField({
+      title: 'Slug',
+      name: 'slug',
+      type: 'string'
+    }),
+    defineField({
       title: 'Description',
       name: 'description',
       type: 'text'
+    }),
+    defineField({
+      title: 'Contenu de page',
+      name: 'content',
+      type: 'array',
+      of: [
+        defineArrayMember(commRulesType),
+        defineArrayMember(titleDescriptionType),
+        defineArrayMember(goodPracticeReferencesType),
+        defineArrayMember(lawReferencesType)
+      ]
     })
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      tag: 'tag',
-    },
-    prepare({ title, tag }) {
-      return {
-        title: title || 'Handicap sans titre',
-        subtitle: tag,
-      }
-    },
-  },
+  ]
 })
