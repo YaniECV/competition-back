@@ -1,9 +1,9 @@
 import { BookIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
-export const loiBlockType = defineType({
+export const lawBlockType = defineType({
   title: 'Loi',
-  name: 'loiBlock',
+  name: 'lawBlock',
   type: 'object',
   icon: BookIcon,
   fields: [

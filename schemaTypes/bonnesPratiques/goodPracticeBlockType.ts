@@ -1,9 +1,9 @@
 import { ThumbsUpIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-export const bonnePratiqueBlockType = defineType({
+export const goodPracticeBlockType = defineType({
   title: 'Bonnes pratiques',
-  name: 'bonnePratiqueBlock',
+  name: 'goodPracticeBlock',
   type: 'object',
   icon: ThumbsUpIcon,
   fields: [
@@ -13,7 +13,7 @@ export const bonnePratiqueBlockType = defineType({
       type: 'array',
       description: 'Ajoutez et réordonnez les sections de bonnes pratiques',
       of: [
-        defineArrayMember({ type: 'bonnePratiqueSection' }),
+        defineArrayMember({ type: 'goodPracticeSection' }),
       ],
     }),
   ],

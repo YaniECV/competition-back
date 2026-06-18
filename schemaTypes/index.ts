@@ -1,10 +1,8 @@
-import { heroType } from "./blocks/heroType";
-import { introType } from "./blocks/introType";
-import { loiBlockType } from "./lois/loiBlockType";
-import { loiType } from "./loiType";
-import { bonnePratiqueSectionType } from "./bonnesPratiques/bonnePratiqueSectionType";
-import { bonnePratiqueBlockType } from "./bonnesPratiques/bonnePratiqueBlockType";
-import { bonnePratiqueType } from "./bonnePratiqueType";
+import { lawBlockType } from "./lois/lawBlockType";
+import { lawType } from "./lawType";
+import { goodPracticeSectionType } from "./bonnesPratiques/goodPracticeSectionType";
+import { goodPracticeBlockType } from "./bonnesPratiques/goodPracticeBlockType";
+import { goodPracticeType } from "./goodPracticeType";
 import { handicapCardType } from "./handicaps/handicapCardType";
 import { handicapType } from "./handicapType";
 import { handicapPageType } from "./handicapPageType";
@@ -12,12 +10,10 @@ import { handicapPageType } from "./handicapPageType";
 export const schemaTypes = [
   handicapPageType,
   handicapType,
-  loiType,
-  bonnePratiqueType,
-  introType,
-  heroType,
-  loiBlockType,
-  bonnePratiqueSectionType,
-  bonnePratiqueBlockType,
+  lawType,
+  goodPracticeType,
+  lawBlockType,
+  goodPracticeSectionType,
+  goodPracticeBlockType,
   handicapCardType,
 ]

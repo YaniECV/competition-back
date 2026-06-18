@@ -1,13 +1,13 @@
-import { UlistIcon } from "@sanity/icons";
+import { DocumentTextIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 const previewImageUrl = (schemaTypeName: string) => `/static/preview-${schemaTypeName}.png`
 
-export const bonnePratiqueType = defineType({
-  title: 'Bonnes pratiques',
-  name: 'bonnePratique',
+export const lawType = defineType({
+  title: 'Lois',
+  name: 'law',
   type: 'document',
-  icon: UlistIcon,
+  icon: DocumentTextIcon,
   fields: [
     defineField({
       title: 'Tag',
@@ -19,7 +19,7 @@ export const bonnePratiqueType = defineType({
       title: 'Titre',
       name: 'title',
       type: 'string',
-      placeholder: 'Mes bonnes pratiques',
+      placeholder: 'Mes lois',
     }),
     defineField({
       title: 'Description',
@@ -32,9 +32,9 @@ export const bonnePratiqueType = defineType({
       title: 'Contenu de page',
       name: 'content',
       type: 'array',
-      description: 'Bloc regroupant les sections de bonnes pratiques',
+      description: 'Ajoutez, empilez et réordonnez vos blocs de lois comme vous le souhaitez',
       of: [
-        defineArrayMember({ type: 'bonnePratiqueBlock' }),
+        defineArrayMember({ type: 'lawBlock' }),
       ],
       options: {
         insertMenu: {

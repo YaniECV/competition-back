@@ -1,8 +1,8 @@
 import { defineField, defineType } from "sanity";
 
-export const bonnePratiqueSectionType = defineType({
+export const goodPracticeSectionType = defineType({
   title: 'Section',
-  name: 'bonnePratiqueSection',
+  name: 'goodPracticeSection',
   type: 'object',
   fields: [
     defineField({
