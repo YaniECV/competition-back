@@ -1,20 +1,18 @@
 import { UlistIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
+import { goodPracticeReferencesType } from "./blocks/goodPracticeReferencesType";
 
 const previewImageUrl = (schemaTypeName: string) => `/static/preview-${schemaTypeName}.png`
 
 export const goodPracticeType = defineType({
-  title: 'Bonnes pratiques',
+  title: 'Page Bonnes pratiques',
   name: 'goodPractice',
   type: 'document',
   icon: UlistIcon,
+  options: {
+    singleton: true
+  },
   fields: [
-    defineField({
-      title: 'Tag',
-      name: 'tag',
-      type: 'string',
-      description: 'Étiquette affichée au-dessus du titre',
-    }),
     defineField({
       title: 'Titre',
       name: 'title',
@@ -34,7 +32,8 @@ export const goodPracticeType = defineType({
       type: 'array',
       description: 'Bloc regroupant les sections de bonnes pratiques',
       of: [
-        defineArrayMember({ type: 'goodPracticeBlock' }),
+
+        defineArrayMember(goodPracticeReferencesType),
       ],
       options: {
         insertMenu: {
