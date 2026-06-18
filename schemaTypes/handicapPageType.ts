@@ -6,6 +6,9 @@ export const handicapPageType = defineType({
   name: 'handicapPage',
   type: 'document',
   icon: UsersIcon,
+  options: {
+    singleton: true
+  },
   fields: [
     defineField({
       title: 'Cartes',
