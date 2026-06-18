@@ -1,6 +1,5 @@
 import { heroType } from "./heroType";
 import { introType } from "./introType";
-import { articleType } from "./articleType";
 import { loiBlockType } from "./loiBlockType";
 import { loiType } from "./loiType";
 import { bonnePratiqueSectionType } from "./bonnePratiqueSectionType";
@@ -17,7 +16,6 @@ export const schemaTypes = [
   bonnePratiqueSectionType,
   bonnePratiqueBlockType,
   handicapCardType,
-  articleType,
   loiType,
   bonnePratiqueType,
   handicapType,
