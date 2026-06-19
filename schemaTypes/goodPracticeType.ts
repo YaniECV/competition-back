@@ -27,6 +27,12 @@ export const goodPracticeType = defineType({
       description: 'Texte affiché sous le titre',
     }),
     defineField({
+      title: 'Image',
+      name: 'image',
+      type: 'image',
+      description: 'Insérer une image illustrant la bonne pratique' 
+    }),
+    defineField({
       title: 'Contenu de page',
       name: 'content',
       type: 'array',
