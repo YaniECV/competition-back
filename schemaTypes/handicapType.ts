@@ -4,6 +4,7 @@ import { commRulesType } from "./blocks/commRulesType";
 import { titleDescriptionType } from "./blocks/titleDescriptionType";
 import { goodPracticeReferencesType } from "./blocks/goodPracticeReferencesType";
 import { lawReferencesType } from "./blocks/lawReferencesType";
+import { goodPracticeType } from "./goodPracticeType";
 
 export const handicapType = defineType({
   title: 'Handicaps',
@@ -34,6 +35,15 @@ export const handicapType = defineType({
       name:'iamge',
       type:'image',
       description:'Insérer une image liée au handicape'
+    }),
+    defineField({
+      title: 'Bonnes pratiques',
+      name: 'goodPractices',
+      description: 'Bonnes pratiques à référencer',
+      type: 'array',
+      of: [
+        defineArrayMember(goodPracticeType)
+      ]
     }),
     defineField({
       title: 'Contenu de page',
