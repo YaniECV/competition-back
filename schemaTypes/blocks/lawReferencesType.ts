@@ -1,6 +1,6 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { lawType } from "../lawTypePage";
+import { lawTypePage } from "../lawTypePage";
 
 export const lawReferencesType = defineType({
   title: 'Lois',
@@ -13,7 +13,7 @@ export const lawReferencesType = defineType({
       name: 'laws',
       type: 'array',
       of: [
-        defineArrayMember({ type: 'reference', to: lawType })
+        defineArrayMember({ type: 'reference', to: lawTypePage })
       ]
     })
   ]
