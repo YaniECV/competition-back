@@ -22,6 +22,11 @@ export const goodPratice = defineType({
             placeholder: 'Réserver des places',
         }),
         defineField({
+            title:'slug',
+            name:'slug',
+            type:'slug',
+        }),
+        defineField({
             title: 'Description',
             name: 'description',
             type: 'string',
