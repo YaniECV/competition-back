@@ -1,6 +1,5 @@
 import { DesktopIcon } from "@sanity/icons";
-import { defineArrayMember, defineField, defineType } from "sanity";
-import { titleDescriptionType } from "./blocks/titleDescriptionType";
+import { defineField, defineType } from "sanity";
 
 export const handicapPageType = defineType({
   title: 'Page « Handicaps »',
