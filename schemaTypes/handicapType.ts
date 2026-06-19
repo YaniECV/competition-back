@@ -30,6 +30,12 @@ export const handicapType = defineType({
       ]
     }),
     defineField({
+      title: 'image',
+      name:'iamge',
+      type:'image',
+      description:'Insérer une image liée au handicape'
+    }),
+    defineField({
       title: 'Contenu de page',
       name: 'content',
       type: 'array',
