@@ -40,9 +40,14 @@ export const goodPratice = defineType({
         defineField({
             title: 'Loi',
             name: 'law',
-            type: 'reference',
-            to: [{ type: 'law' }],
+            type: 'array',
             description: 'Loi associée à cette bonne pratique',
+            of: [
+                defineArrayMember({
+                    type:'reference',
+                    to:[{type:'lawBlock'}],
+                }),
+            ],
         }),    
     ],
 
