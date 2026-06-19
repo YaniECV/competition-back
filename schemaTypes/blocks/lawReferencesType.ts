@@ -1,6 +1,6 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { lawType } from "../lawType";
+import { lawType } from "../lawTypePage";
 
 export const lawReferencesType = defineType({
   title: 'Lois',

@@ -4,7 +4,7 @@ import { howtomake } from "./blocks/howtomake";
 import { titleDescriptionType } from "./blocks/titleDescriptionType";
 
 export const goodPratice = defineType({
-    title: 'Single pageBonne Pratique',
+    title: 'Bonnes Pratiques',
     name: 'goodPratice',
     type: 'document',
     icon: UlistIcon,

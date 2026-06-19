@@ -1,5 +1,5 @@
-import { lawBlockType } from "./lois/lawBlockType";
-import { lawType } from "./lawType";
+import { lawType } from "./lois/lawType";
+import { lawTypePage } from "./lawTypePage";
 import { goodPracticeSectionType } from "./bonnesPratiques/goodPracticeSectionType";
 import { goodPracticeBlockType } from "./bonnesPratiques/goodPracticeBlockType";
 import { goodPracticeType } from "./goodPracticeType";
@@ -14,10 +14,10 @@ import { goodPracticeReferencesType } from "./blocks/goodPracticeReferencesType"
 export const schemaTypes = [
   handicapPageType,
   handicapType,
-  lawType,
+  lawTypePage,
   goodPracticeType,
   goodPratice,
-  lawBlockType,
+  lawType,
   goodPracticeSectionType,
   goodPracticeBlockType,
   handicapCardType,

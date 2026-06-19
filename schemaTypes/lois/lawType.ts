@@ -1,10 +1,10 @@
 import { BookIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
-export const lawBlockType = defineType({
+export const lawType = defineType({
   title: 'Loi',
   name: 'lawBlock',
-  type: 'object',
+  type: 'document',
   icon: BookIcon,
   fields: [
     defineField({
@@ -24,6 +24,11 @@ export const lawBlockType = defineType({
       type: 'string',
       description: 'Référence précise de la loi (ex. : Loi n° 2024-123 du 15 mars 2024)',
     }),
+    defineField({
+      title: 'Lien vers le texte de loi',
+      name: 'link',
+      type: 'url',
+    })
   ],
   preview: {
     select: {

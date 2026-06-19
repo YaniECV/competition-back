@@ -5,7 +5,7 @@ import { goodPracticeReferencesType } from "./blocks/goodPracticeReferencesType"
 const previewImageUrl = (schemaTypeName: string) => `/static/preview-${schemaTypeName}.png`
 
 export const goodPracticeType = defineType({
-  title: 'Page Bonnes pratiques',
+  title: 'Page « Bonnes pratiques »',
   name: 'goodPractice',
   type: 'document',
   icon: UlistIcon,
